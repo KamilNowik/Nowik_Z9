@@ -31,13 +31,13 @@ void wymiana(rekord T[][n], int ktory)
 {   int k, najwiekszy;
     rekord temp;
     for(int i=1; i<n; i++)
-    {   najwiekszy=0;
+    {   najwiekszy=-10;
         for(int j=0; j<i; j++)
         {
 
-            if(T[i][j].znak+T[i][j].liczba>najwiekszy)
+            if(T[i][j].liczba>najwiekszy)
             {
-                najwiekszy=(T[i][j].znak+T[i][j].liczba);
+                najwiekszy=T[i][j].liczba;
                 k=j;
 
             }
